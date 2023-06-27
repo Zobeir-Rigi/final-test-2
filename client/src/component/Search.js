@@ -1,10 +1,10 @@
 import "./User.css";
 import { useContext } from "react";
 import { AppContext } from "../AppContext";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 export const Search = () => {
-    // const navigate = useNavigate();
+    const navigate = useNavigate();
 
     const { userName, setCodewarsData, setGitHubData } = useContext(AppContext);
     const handleSearch = () => {
@@ -18,6 +18,7 @@ export const Search = () => {
                 return res.json();
             })
             .then((data) => {
+                console.log(data)
                 return setCodewarsData(data);
                 
             })
@@ -39,8 +40,8 @@ export const Search = () => {
             .catch((err) => {
                 console.error(err);
             });
-            //  navigate("/result");
-             window.open("/result", "_blank");
+             navigate("/result");
+            //  window.open("/result", "_blank");
    
     };
     return (
