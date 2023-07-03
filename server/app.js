@@ -1,5 +1,5 @@
 import express from "express";
-
+const cors = require("cors");
 import apiRouter from "./api";
 import traineeRouter from "./routes/traineeRoutes";
 import cohortRouter from "./routes/cohortRoutes";
@@ -24,7 +24,7 @@ if (config.production) {
 	app.enable("trust proxy");
 	app.use(httpsOnly());
 }
-
+app.use(cors());
 app.use(apiRoot, apiRouter);
 //Routes//
 app.use(`${apiRoot}/trainees`,traineeRouter);
