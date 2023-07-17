@@ -1,10 +1,10 @@
-import React, { useContext } from "react";
-import { AppContext } from "../AppContext";
 import "./User.css";
-import { Search } from "./Search";
+import { useContext } from "react";
+import { Search } from "../component/Search";
+import { AppContext } from "../AppContext";
 
-export function User() {
-	const { userName, setUserName } = useContext(AppContext);
+export const User = () => {
+	const { setUserName } = useContext(AppContext);
 
 	const handleInputChange = (event) => {
 		setUserName(event.target.value);
@@ -12,16 +12,21 @@ export function User() {
 
 	return (
 		<div className="user-container">
-			<label htmlFor="username">GitHub User Name</label>
-			<input
-				className="user-input"
-				type="text"
-				id="username"
-				value={userName}
-				onChange={handleInputChange}
-				placeholder="Enter your Github User Name ..."
-			/>
-			<Search />
+			<h1 className="home-heading">Want to check your progress? Amazing! </h1>
+
+			<div className="user-details">
+				<label htmlFor="username">Enter Your GitHub User Name</label>
+				<input
+					className="form-input"
+					type="text"
+					id="username"
+					placeholder="PetePeteLindsell"
+					onChange={handleInputChange}
+				/>
+			</div>
+			<div className="search-button">
+				<Search />
+			</div>
 		</div>
 	);
-}
+};

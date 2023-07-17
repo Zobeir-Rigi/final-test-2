@@ -1,10 +1,11 @@
+import { User } from "../component/User";
 import "./Home.css";
-import {User} from "../component/User";
-
 export const Home = () => {
 	return (
-		<main className="main_container" role="main">
+		<main className="home" >
+			<div className="home-card">
 			<User />
+			</div>
 		</main>
 	);
 };
