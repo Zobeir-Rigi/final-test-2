@@ -8,6 +8,7 @@ import { Cohorts } from "./pages/Cohorts";
 import { Trainees } from "./pages/Trainees";
 import { AddTrainee } from "./pages/AddTrainee";
 import { Header } from "./component/Header";
+import { Footer } from "./component/Footer";
 const App = () => {
 	const [userName, setUserName] = useState("");
 	const [codewarsData, setCodewarsData] = useState([]);
@@ -31,6 +32,7 @@ const App = () => {
 				<Route path="/cohorts/:id/addtrainee" element={<AddTrainee />} />
 				<Route path="/result" element={<Result />} />
 			</Routes>
+			<Footer />
 		</AppContext.Provider>
 	);
 };
