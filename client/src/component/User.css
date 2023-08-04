@@ -18,7 +18,7 @@
 .user-details {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
     position: absolute;
     top: 45%;
     color: #FFFBFb;
