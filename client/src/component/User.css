@@ -24,12 +24,12 @@
     color: #FFFBFb;
 }
 .form-label {
-    font-size: 26px;
+    font-size: 27px;
 }
 .form-input {
     padding: 6px;
     border: #ED4343 solid;
-    border-radius: 4px;
+    border-radius: 5px;
 }
 .search-button {
     position: absolute;
@@ -39,7 +39,7 @@
     padding: 2px 12px 2px 12px;
     background-color: #ED4343;
     color: #FFFBFB;
-    border-radius: 10px;
+    border-radius: 11px;
     font-size: large;
     cursor: pointer;
     font-family: "Comic Sans MS", cursive;
