@@ -5,6 +5,7 @@ import { Button } from "../component/Button";
 import { InputeField } from "../component/InputeField";
 import "../pages/addTrainee.css";
 
+
 export const UpdateTrainee = () => {
 	const [fullname, setFullName] = useState("");
 	const [githubUserName, setGithubUserName] = useState("");

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import "./trainees.css";
-
+import EditIcon from "@mui/icons-material/Edit";
 export const Trainees = ({ trainees,id }) => {
 	return (
 		<div className="trainees">
@@ -24,7 +24,7 @@ export const Trainees = ({ trainees,id }) => {
 								<td> 5ku</td>
 								<td>
 									<span>
-										<Link className="link" to={`/admin/cohorts/${id}/updateTrainee/${trainee.id}`}>Edit</Link>
+										<Link className="link" to={`/admin/cohorts/${id}/updateTrainee/${trainee.id}`}><EditIcon /></Link>
 									</span>
 									<span>
 										<Link className="link">View</Link>
