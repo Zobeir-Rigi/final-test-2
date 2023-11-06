@@ -1,18 +1,16 @@
 .home {
-    height:90vh;
-    display: flex;
+	height:80vh ;
+	display: flex;
+	flex-direction: column;
 	align-items: center;
-    flex-direction: column;
-    background-color: #FFFBFB;
-    /* position: relative; */
-    padding: 22px;
+	background-color:var(--SecondaryColor);
+	padding:0px 22px;
+
 }
 
 .home-card {
-    height:80% ;
-    width: 100%;
-    background-color: #3C486B;
-    border-radius: 8px;
-    /* position: absolute; */
-    /* top: 1%; */
+	height: 80vh;
+	width: 100%;
+	background-color: var(--PrimaryColor);
+	border-radius: 8px;
 }

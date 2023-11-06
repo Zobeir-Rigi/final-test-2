@@ -1,7 +1,7 @@
-import "./User.css";
 import { useContext, useState } from "react";
 import { AppContext } from "../AppContext";
 import { useNavigate } from "react-router-dom";
+import "./User.css";
 
 export const Search = () => {
 	const { userName, setCodewarsData, setGitHubData } = useContext(AppContext);
@@ -9,7 +9,7 @@ export const Search = () => {
 	const [error, setError] = useState(false);
 
 	const handleSearch = () => {
-		/////****GETTING CODEWARS DATA****///////
+		/////****GETTING CODEWARS DATA****//////
 		fetch(`https://www.codewars.com/api/v1/users/${userName}`)
 			.then((res) => {
 				if (!res.ok) {
@@ -47,8 +47,7 @@ export const Search = () => {
 	return (
 		<>
 			<button className="user-button" onClick={handleSearch}>
-				<span className="user-button-span">{"let's go!"}</span>
-				<span>🚀</span>
+				<span className="user-button-span">{"Let's go!"}</span>
 			</button>
 			{error && <p className="error">You should be a member of CYF.</p>}
 		</>

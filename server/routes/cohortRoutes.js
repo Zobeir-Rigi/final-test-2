@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getAllCohorts, createCohort, getCohort } from "../controllers/cohortController";
+import { getAllCohorts, createCohort, updateCohort, getCohort } from "../controllers/cohortController";
 
 const router = Router();
 
@@ -10,6 +10,7 @@ router
 
 router
   .route("/:id")
-  .get(getCohort);
+  .get(getCohort)
+  .put(updateCohort);
 
 export default router;

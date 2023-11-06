@@ -1,0 +1,69 @@
+.pr_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    text-align: center;
+    width: 100%;
+    background: var(--PrimaryColor);
+    height: 60vh;
+  }
+  
+  .hero-title {
+    color: var(--SecondaryColor);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .hero-subcontainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .hero-prgph {
+    color: var(--SecondaryColor);
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 34px;
+  }
+  
+  .hero-details {
+    font-size: 16px;
+    color: var(--red);
+  }
+  
+  .dashboardHero-title {
+    color: var(--SecondaryColor);
+    font-size: 2rem;
+  }
+  
+  .dashboardHero-title-cohort {
+    font-size: 1.5rem;
+    color: var(--SecondaryColor);
+}
+
+@media (min-width: 650px) {
+    .pr_card{
+        height: 30vh;
+    }
+
+    .hero-subcontainer{
+        flex: row;
+        justify-content: center;
+        
+    }
+
+    .hero-subcontainer {
+      background-color: rgba(94, 105, 140, 0.5);
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 60%;
+      justify-self: center;
+      align-self: center;
+      column-gap: 40px;
+    }
+}

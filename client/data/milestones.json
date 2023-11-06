@@ -1,0 +1,42 @@
+{
+    "start": {
+        "pulls": 0,
+        "codewars": 9
+    },
+    "html_css": {
+        "pulls": 2,
+        "codewars": 9
+    },
+    "js1_week2": {
+        "pulls": 5,
+        "codewars": 8
+    },
+    "js2_week1": {
+        "pulls": 10,
+        "codewars": 7
+    },
+    "js3_week3": {
+        "pulls": 11,
+        "codewars": 6
+    },
+    "react_week2": {
+        "pulls": 14,
+        "codewars": 6
+    },
+    "node_week2": {
+        "pulls": 14,
+        "codewars": 6
+    },
+    "db_week3": {
+        "pulls": 19,
+        "codewars": 5
+    },
+    "fp_week2": {
+        "pulls": 20,
+        "codewars": 5
+    },
+    "post_grad": {
+        "pulls": 27,
+        "codewars": 4
+    }
+}

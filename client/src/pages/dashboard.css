@@ -1,0 +1,28 @@
+.dashboard__container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    row-gap: 40px;
+}
+
+@media (min-width: 650px) {
+    .dashboard__container{
+        row-gap: 0;
+    }
+    .main-container{
+        flex-direction: row;
+        width: 100%;
+        background-color: var(--PrimaryColor);
+        justify-content: space-around;
+        align-items: start;
+        align-content: center;
+        justify-content: start;
+    }
+}

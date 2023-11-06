@@ -1,11 +1,11 @@
 import { AppContext } from "../AppContext";
 import { useContext } from "react";
-import "../styles/MilestoneTable.css";
+import "./milestoneTable.css";
 
 export const MilestoneTable = () => {
 	const { githubData, codewarsData } = useContext(AppContext);
 	return (
-		<div className="table-wrapper">
+		<div className="milestone-table__wrapper">
 			<table>
 				<thead>
 					<tr>

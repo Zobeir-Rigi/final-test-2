@@ -1,0 +1,81 @@
+.milestone__card-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  row-gap: 30px;
+  justify-content: center;
+  background-color: var(--PrimaryColor);
+  padding: 40px 15px;
+  height:900px
+}
+.milestone__title-container {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.milestone-title {
+  row-gap: 0.6rem;
+  font-size: 2rem;
+  text-align: center;
+  color: var(--SecondaryColor);
+}
+.deadline-prgph{
+  font-size: 1.125rem;
+  text-align: center;
+}
+.milestone__card-subcontainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgba(94, 105, 140, 0.5);
+  padding:10px 5px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.factor-container {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-direction: column;
+  row-gap: 2.5rem;
+  width: 50%;
+}
+.milestone-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.factor-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+.card-prgph {
+  display: flex;
+  flex-direction: column;
+}
+.card-prgph-number {
+  color: var(--yellow);
+  font-size: 2rem;
+  padding: 10px 0 0 0;
+}
+p{
+  font-size: 1.25rem;
+}
+.kyu {
+  color: var(--white);
+  font-size: 1.25rem;
+}
+
+@media (min-width: 650px) {
+  .milestone__card-container {
+    width: 50%;
+    row-gap: 30px;
+    justify-content: center;
+    background-color: var(--PrimaryColor);
+    padding: 40px 15px;
+    height:900px
+  }
+
+  .milestone__card-subcontainer {
+   height: 80%;
+  }
+ 
+}

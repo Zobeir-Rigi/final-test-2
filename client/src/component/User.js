@@ -1,7 +1,7 @@
-import "./User.css";
 import { useContext } from "react";
 import { Search } from "../component/Search";
 import { AppContext } from "../AppContext";
+import "./User.css";
 
 export const User = () => {
 	const { setUserName } = useContext(AppContext);
@@ -17,10 +17,11 @@ export const User = () => {
 			<div className="user-details">
 				<label htmlFor="username">Enter Your GitHub User Name</label>
 				<input
+					placeholder="PeteLindsell
+				"
 					className="form-input"
 					type="text"
 					id="username"
-					placeholder="PetePeteLindsell"
 					onChange={handleInputChange}
 				/>
 			</div>

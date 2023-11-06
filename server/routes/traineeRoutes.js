@@ -1,5 +1,5 @@
 import { Router } from "express";
-import { getAllTrainees, createTrainee, getTrainee, searchTrainee } from "../controllers/traineeController";
+import { getAllTrainees, createTrainee, getTrainee, searchTrainee, updateTrainee } from "../controllers/traineeController";
 
 const router = Router();
 
@@ -14,6 +14,7 @@ router
 
 router
   .route("/:id")
-  .get(getTrainee);
+  .get(getTrainee)
+  .put(updateTrainee);
 
 export default router;

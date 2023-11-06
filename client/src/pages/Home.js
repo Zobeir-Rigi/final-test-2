@@ -1,10 +1,11 @@
 import { User } from "../component/User";
-import "./Home.css";
+import "./home.css";
+
 export const Home = () => {
 	return (
-		<main className="home" >
+		<main className="home">
 			<div className="home-card">
-			<User />
+				<User />
 			</div>
 		</main>
 	);
