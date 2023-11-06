@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import VisibilityIcon from "@mui/icons-material/Visibility";
 
 export const CohortsTable = ({ cohortsData }) => {
 	return (
@@ -16,7 +17,7 @@ export const CohortsTable = ({ cohortsData }) => {
 							<tr key={cohort.id}>
 								<td>{cohort.name}</td>
 								<td>
-									<Link className="link" to={`${cohort.id}`}>view</Link>
+									<Link className="link" to={`${cohort.id}`}><VisibilityIcon /></Link>
 								</td>
 							</tr>
 						))}
