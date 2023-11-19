@@ -13,7 +13,7 @@ export const Footer = () => {
 					target="_blank"
 					noValidate
 				>
-					<span className="newsletter">Sign up to our newsletter</span>
+					<span className="newsletter">Sign Up To Our News Letter</span>
 					<input
 						type="email"
 						placeholder="email address"
