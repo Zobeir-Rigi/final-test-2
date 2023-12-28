@@ -6,7 +6,7 @@ export const About = () => (
 				Starter kit for full-stack JavaScript projects. For more information,
 				see the wiki:
 			</p>
-			<a href="https://github.com/textbook/starter-kit/wiki">Wiki</a>
+			<a href="https://github.com/textbook/starter-kit/wiki">Wikipedia</a>
 		</div>
 	</main>
 );
