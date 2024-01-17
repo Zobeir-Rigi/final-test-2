@@ -2,7 +2,6 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../component/Button";
 import { InputeField } from "../component/InputeField";
-// import "../pages/addTrainee.css";
 
 export const AddTrainee = () => {
 	const [fullname, setFullName] = useState("");
