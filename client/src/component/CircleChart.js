@@ -16,7 +16,6 @@ export const CircleChart = ({ targetScore, achievedscore }) => {
     { name: "Group B", value: gettingNeddedScore(targetScore, achievedscore) },
   ];
 
-  // const totalValue = data.reduce((sum, entry) => sum + entry.value, 0);
   const percentage = ((data[0].value / targetScore) * 100).toFixed(0);
   const [isLabelVisible, setLabelVisible] = useState(false);
   useEffect(() => {
