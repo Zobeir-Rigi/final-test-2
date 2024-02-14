@@ -53,7 +53,7 @@ export const createCohort = async (req, res) => {
 			!m_7 ||
 			!m_8
 		) {
-			//not sure product manager has to know all dates in advance
+
 			return res
 				.status(400)
 				.json({ error: "Please fill out all required fields." });
